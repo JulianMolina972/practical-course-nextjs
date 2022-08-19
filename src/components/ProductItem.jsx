@@ -1,9 +1,9 @@
-import React, { useContext } from 'react'
-import Image from 'next/image'
-import AppContext from '@context/AppContext'
-import addToCartIcon from '@icons/bt_add_to_cart.svg'
-import addedToCartIcon from '@icons/bt_added_to_cart.svg'
-import styles from '@styles/ProductItem.module.scss'
+import React, { useContext } from 'react';
+import Image from 'next/image';
+import AppContext from '@context/AppContext';
+import addToCartIcon from '@icons/bt_add_to_cart.svg';
+import addedToCartIcon from '@icons/bt_added_to_cart.svg';
+import styles from '@styles/ProductItem.module.scss';
 
 export const ProductItem = ({ product }) => {
 
@@ -16,7 +16,6 @@ export const ProductItem = ({ product }) => {
 	const itsProductAdded = () =>
 	state.cart.some((item) => item.id === product.id) ? true : false;
 
-	console.log(product.images)
   return (
     <div className={styles.ProductItem}>
 			<Image 
@@ -30,7 +29,7 @@ export const ProductItem = ({ product }) => {
 					<p>${product.price}</p>
 					<p>{product.title}</p>
 				</div>
-				<figure onClick={() => handleClick(product)}>
+				<figure onClick={() => handleClick(product)} role="presentation">
 					{itsProductAdded() ? (
 							<Image 
 								src={addedToCartIcon} 
@@ -49,5 +48,5 @@ export const ProductItem = ({ product }) => {
 				</figure>
 			</div>
 		</div>
-  )
-}
+  );
+};

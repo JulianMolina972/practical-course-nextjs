@@ -7,6 +7,6 @@ export const Home = () => {
 			<ProductList />
 		</>
 	);
-}
+};
 
 

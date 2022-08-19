@@ -16,5 +16,5 @@ export const ProductList = () => {
 			</div>
 		</section>
 	);
-}
+};
 

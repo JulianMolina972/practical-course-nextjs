@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { OrderItem } from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import flechita from '@icons/flechita.svg';
@@ -16,13 +17,13 @@ export const MyOrder = () => {
 		const reducer = (accumulator, currentValue) => accumulator + currentValue.price;
 		const sum = state.cart.reduce(reducer, 0);
 		return sum;
-	}
+	};
 
 
 	return (
 		<aside className={styles.MyOrder}>
 			<div className={styles['title-container-my-order']}>
-				<img 
+				<Image 
 					src={flechita} 
 					alt="arrow" 
 					onClick={() => toggleOrdersFlechita()}
@@ -45,5 +46,5 @@ export const MyOrder = () => {
 			</div>
 		</aside>
 	);
-}
+};
 

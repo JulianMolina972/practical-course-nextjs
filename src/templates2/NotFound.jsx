@@ -1,5 +1,5 @@
-import React from 'react'
-import '@styles/NotFound.scss'
+import React from 'react';
+import '@styles/NotFound.scss';
 
 export const NotFound = () => {
   return (
@@ -8,5 +8,5 @@ export const NotFound = () => {
         Not Found, error 404
       </h2>
     </div>
-  )
-}
+  );
+};

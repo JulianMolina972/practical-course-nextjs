@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   root: true,
   env: {
     browser: true,
@@ -12,13 +12,9 @@ module.export = {
     'plugin:prettier/recommended',
     'next',
     'next/core-web-vitals',
-    '@salesforce/eslint-config-lwc/recommended',
   ],
   rules: {
     'semi': ['error', 'always'],
+    'prettier/prettier': 0
   },
-  parserOptions: {
-      'sourceType': 'module',
-      'ecmaVersion': 2020,
-  }
 }

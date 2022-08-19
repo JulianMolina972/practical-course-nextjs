@@ -1,22 +1,22 @@
-import React from 'react'
-import { Home } from '@pages/Home'
-import { Login } from '@pages/Login'
-import { Layout } from '@containers/Layout'
-import { Orders } from '@pages/Orders'
-import { Checkout } from '@pages/Checkout'
-import { NotFound } from '@pages/NotFound'
-import { MyAccount } from '@pages/MyAccount'
-import { SendEmail } from '@pages/SendEmail'
-import { NewPassword } from '@pages/NewPassword'
-import { CreateAccount } from '@pages/CreateAccount'
-import { PasswordRecovery } from '@pages/PasswordRecovery'
-import { BrowserRouter, Routes ,Route } from 'react-router-dom' 
-import AppContext from '@context/AppContext'
-import useInitialState from '@hooks/useInitialState'
-import '@styles/global.css'
+import React from 'react';
+import { Home } from '@pages/Home';
+import { Login } from '@pages/Login';
+import { Layout } from '@containers/Layout';
+import { Orders } from '@pages/Orders';
+import { Checkout } from '@pages/Checkout';
+import { NotFound } from '@pages/NotFound';
+import { MyAccount } from '@pages/MyAccount';
+import { SendEmail } from '@pages/SendEmail';
+import { NewPassword } from '@pages/NewPassword';
+import { CreateAccount } from '@pages/CreateAccount';
+import { PasswordRecovery } from '@pages/PasswordRecovery';
+import { BrowserRouter, Routes ,Route } from 'react-router-dom' ;
+import AppContext from '@context/AppContext';
+import useInitialState from '@hooks/useInitialState';
+import '@styles/global.css';
 
 const App = () => {
-  const initialState = useInitialState()
+  const initialState = useInitialState();
   return (
     <AppContext.Provider value={initialState}>
       <BrowserRouter>
@@ -36,7 +36,7 @@ const App = () => {
         </Layout>
       </BrowserRouter>
     </AppContext.Provider>
-  )
-}
+  );
+};
 
 export default App;

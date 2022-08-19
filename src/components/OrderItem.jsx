@@ -1,6 +1,6 @@
-import React, { useContext } from 'react'
-import Image from 'next/image'
-import AppContext from '@context/AppContext'
+import React, { useContext } from 'react';
+import Image from 'next/image';
+import AppContext from '@context/AppContext';
 import closeIcon from '@icons/icon_close.png';
 import styles from '@styles/OrderItem.module.scss';
 
@@ -28,5 +28,5 @@ export const OrderItem = ({ product }) => {
 				height={20}
 			/>
 		</div>
-  )
-}
+  );
+};

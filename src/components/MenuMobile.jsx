@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '@styles/MenuMobile.module.scss';
 
 export const MenuMobile = () => {
@@ -9,41 +10,41 @@ export const MenuMobile = () => {
           <p>CATEGORIES</p>
         </li>
         <li>
-          <a href="/">All</a>
+          <Link href="/">All</Link>
         </li>
         <li>
-          <a href="/">Clothes</a>
+          <Link href="/">Clothes</Link>
         </li>
         <li>
-          <a href="/">Electronics</a>
+          <Link href="/">Electronics</Link>
         </li>
         <li>
-          <a href="/">Furnitures</a>
+          <Link href="/">Furnitures</Link>
         </li>
         <li>
-          <a href="/">Toys</a>
+          <Link href="/">Toys</Link>
         </li>
         <li>
-          <a href="/">Other</a>
+          <Link href="/">Other</Link>
         </li>
       </ul>
 
       <ul className={styles['my-orders-account']}>
         <li>
-          <a href="/account">My orders</a>
+          <Link href="/account">My orders</Link>
         </li>
         <li>
-          <a href="/account">My account</a>
+          <Link href="/account">My account</Link>
         </li>
       </ul>
       <ul>
         <li>
-          <a href="/account" className={styles.email}>exaple@platzi.com</a>
+          <Link href="/account" className={styles.email}>exaple@platzi.com</Link>
         </li>
         <li>
-          <a href="/signup" className={styles['sign-out']}>Sign out</a>
+          <Link href="/signup" className={styles['sign-out']}>Sign out</Link>
         </li>
       </ul>
     </div>
   );
-}
+};

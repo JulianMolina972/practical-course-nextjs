@@ -1,4 +1,6 @@
 import React, { useRef } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import logo from '@logos/logo_yard_sale.svg';
 import '@styles/Login.scss';
 
@@ -12,12 +14,12 @@ export const Login = () => {
 			password: formData.get('password'),
 		};
 		console.log(data);
-	}
+	};
 
 	return (
 		<div className="Login">
 			<div className="Login-container">
-				<img src={logo} alt="logo" className="logo" />
+				<Image src={logo} alt="logo" className="logo" />
 				<form action="/" className="form" ref={form}>
 					<label htmlFor="email" className="label">Email address</label>
 					<input 
@@ -38,7 +40,7 @@ export const Login = () => {
 					>
 						Log in
 					</button>
-					<a href="/">Forgot my password</a>
+					<Link href="/">Forgot my password</Link>
 				</form>
 				<button className="secondary-button signup-button">
 					Sign up
@@ -46,6 +48,6 @@ export const Login = () => {
 			</div>
 		</div>
 	);
-}
+};
 
 
