@@ -35,6 +35,7 @@ export const Header = () => {
           alt="menu" 
           className={styles.menu}  
           onClick={handleToggleMobile}
+          role="presentation"
         />
         <div className={styles['navbar-left']}>
           <Link href="/">
