@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  images: {
+    domains: [
+      'placeimg.com',
+      'api.lorem.space', 
+      'img.remediosdigitales.com',
+      'encrypted-tbn0.gstatic.com',
+    ],
+  }
   // env: {
   //   customKey: 'customValue',
   // },

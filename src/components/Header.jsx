@@ -1,18 +1,19 @@
 import React, { useState, useContext } from 'react'
+import Link from 'next/link';
+import Image from 'next/image'
 import AppContext from '@context/AppContext'
 import { Menu } from '@components/Menu'
 import { MyOrder } from '@containers/MyOrder'
 import { MenuMobile } from '@components/MenuMobile'
-import menu from "@icons/icon_menu.svg"
 import logo from "@logos/logo_yard_sale.svg"
+import menuIcon from "@icons/icon_menu.svg"
 import shoppingCartIcon from "@icons/icon_shopping_cart.svg"
 import styles from '@styles/Header.module.scss'
 
 export const Header = () => {
   const [toggle, setToggle] = useState(false);
   const [toggleMobile, setToggleMobile] = useState(false);
-  // const [toggleOrders, setToggleOrders] = useState(false);
-  // () => setToggleOrders(!toggleOrders)
+
   const { 
     state, 
     toggleOrders ,
@@ -29,14 +30,16 @@ export const Header = () => {
 
   return (
       <nav className={styles.Nav}>
-        <img 
-          src={menu} 
+        <Image
+          src={menuIcon}
           alt="menu" 
-          className="menu" 
+          className={styles.menu}  
           onClick={handleToggleMobile}
         />
-        <div className="navbar-left">
-          <img src={logo} alt="logo" className="nav-logo" />
+        <div className={styles['navbar-left']}>
+          <Link href="/">
+            <Image src={logo} alt="logo" className={styles['nav-logo']} />
+          </Link>
           <ul>
             <li>
               <a href="/">All</a>
@@ -58,19 +61,19 @@ export const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="navbar-right">
+        <div className={styles['navbar-right']}>
           <ul>
             <li 
-              className="navbar-email" 
+              className={styles['navbar-email']}
               onClick={handleToggle}
             > 
               platzi@example.com
             </li>
             <li 
-              className="navbar-shopping-cart"
+              className={styles['navbar-shopping-cart']}
               onClick={() => toggleOrdersFlechita()}
             >
-              <img src={shoppingCartIcon} alt="shopping cart" />
+              <Image src={shoppingCartIcon} alt="shopping cart" />
               {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
             </li>
           </ul>

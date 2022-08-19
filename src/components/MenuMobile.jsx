@@ -28,7 +28,7 @@ export const MenuMobile = () => {
         </li>
       </ul>
 
-      <ul className='my-orders-account'>
+      <ul className={styles['my-orders-account']}>
         <li>
           <a href="/account">My orders</a>
         </li>
@@ -38,10 +38,10 @@ export const MenuMobile = () => {
       </ul>
       <ul>
         <li>
-          <a href="/account" className="email">exaple@platzi.com</a>
+          <a href="/account" className={styles.email}>exaple@platzi.com</a>
         </li>
         <li>
-          <a href="/signup" className="sign-out">Sign out</a>
+          <a href="/signup" className={styles['sign-out']}>Sign out</a>
         </li>
       </ul>
     </div>
