@@ -9,6 +9,7 @@
 	position: fixed;
 	top: 0;
 	background-color: $--white;
+	z-index: 1;
 }
 .menu {
 	display: none;
@@ -52,6 +53,7 @@
 }
 .navbar-shopping-cart {
 	position: relative;
+	margin-top: 5px;
 }
 .navbar-shopping-cart div {
 	width: 16px;

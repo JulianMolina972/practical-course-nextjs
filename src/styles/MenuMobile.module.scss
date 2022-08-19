@@ -1,7 +1,7 @@
 @import 'vars';
 
 .mobile-menu {
-    padding: 24px;
+  padding: 24px;
 	position: fixed;
 	top: 60px;
 	right: 0;
@@ -34,11 +34,11 @@
 // 	border-top: 1px solid $--very-light-gray;
 // }
 
-.email {
+.email a {
     font-size: $--sm;
     font-weight: 300 !important;
 }
-.sign-out {
+.sign-out a{
     font-size: $--sm;
     color: $--hospital-green !important;
 }

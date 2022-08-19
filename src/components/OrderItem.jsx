@@ -13,8 +13,9 @@ export const OrderItem = ({ product }) => {
 				<Image 
 					src={product?.images[0]} 
 					alt={product?.title} 
-					width={240}
-					height={240}
+					className={styles.OrderItemProducts}
+					width={100}
+					height={100}
 				/>
 			</figure>
 			<p>{product?.title}</p>

@@ -7,6 +7,7 @@ const nextConfig = {
       'api.lorem.space', 
       'img.remediosdigitales.com',
       'encrypted-tbn0.gstatic.com',
+      'th.bing.com'
     ],
   }
   // env: {

@@ -27,6 +27,8 @@ export const MyOrder = () => {
 					src={flechita} 
 					alt="arrow" 
 					onClick={() => toggleOrdersFlechita()}
+					width={15}
+					height={15}
 				/>
 				<p className={styles['title-my-order']}>My order</p>
 			</div>
@@ -40,8 +42,10 @@ export const MyOrder = () => {
 					</p>
 					<p>${sumTotal()}</p>
 				</div>
-				<Link className={styles['primary-button']} href="/checkout">
-					Checkout
+				<Link  href={"/checkout"}>
+					<p className={styles['primary-button']}>
+						Checkout
+					</p>
 				</Link>
 			</div>
 		</aside>

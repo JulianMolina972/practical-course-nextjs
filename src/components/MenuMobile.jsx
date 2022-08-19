@@ -4,7 +4,7 @@ import styles from '@styles/MenuMobile.module.scss';
 
 export const MenuMobile = () => {
   return (
-    <div className={styles.MenuMobile}>
+    <div className={styles['mobile-menu']}>
       <ul>
         <li>
           <p>CATEGORIES</p>
@@ -38,11 +38,11 @@ export const MenuMobile = () => {
         </li>
       </ul>
       <ul>
-        <li>
-          <Link href="/account" className={styles.email}>exaple@platzi.com</Link>
+        <li className={styles.email}>
+          <Link href="/account" >exaple@platzi.com</Link>
         </li>
-        <li>
-          <Link href="/signup" className={styles['sign-out']}>Sign out</Link>
+        <li className={styles['sign-out']}>
+          <Link href="/signup" >Sign out</Link>
         </li>
       </ul>
     </div>

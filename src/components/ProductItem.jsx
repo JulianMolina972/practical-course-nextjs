@@ -34,15 +34,15 @@ export const ProductItem = ({ product }) => {
 							<Image 
 								src={addedToCartIcon} 
 								alt="added to cart icon" 
-								width={50}
-								height={50}
+								width={40}
+								height={40}
 							/>
 						) : (
 							<Image 
 								src={addToCartIcon} 
 								alt="add to cart icon" 
-								width={50}
-								height={50}	
+								width={40}
+								height={40}	
 							/>
 						)}
 				</figure>

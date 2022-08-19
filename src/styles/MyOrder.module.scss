@@ -12,10 +12,11 @@
 	border-radius: 6px;
 	border: 1px solid $--very-light-gray;
 	animation: swipeLeft 0.26s ease;
+	z-index: 1;
 }
 
 .my-order-content {
-	max-height: calc(100vh - 340px);
+	max-height: calc(100vh - 230px);
 	overflow-y: auto;
 }
 
@@ -30,16 +31,14 @@
 	
 }
 .title-container-my-order img {
-	transform: rotate(180deg);
-	margin-right: 14px;
-	height: 23px;
+	transform: rotate(180deg);	
 	cursor: pointer;
 }
 .title-my-order {
 	
 	font-size: $--lg;
 	font-weight: bold;
-	
+	margin-left: 20px;
 
 }
 .order {
@@ -72,9 +71,12 @@
 	color: $--white;
 	width: 100%;
 	cursor: pointer;
-	font-size: $--md;
+	font-size: $--lg;
 	font-weight: bold;
 	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 @keyframes swipeLeft {

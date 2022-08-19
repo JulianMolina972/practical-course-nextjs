@@ -30,8 +30,8 @@ export const Header = () => {
 
   return (
       <nav className={styles.Nav}>
-        <Image
-          src={menuIcon}
+        <img
+          src={menuIcon.src}
           alt="menu" 
           className={styles.menu}  
           onClick={handleToggleMobile}
@@ -65,7 +65,7 @@ export const Header = () => {
           <ul>
             <li 
               className={styles['navbar-email']} 
-              onClick={() => handleToggle} 
+              onClick={handleToggle} 
               role="presentation"
             > 
               platzi@example.com
@@ -75,7 +75,7 @@ export const Header = () => {
               onClick={() => toggleOrdersFlechita()}
               role="presentation"
             >
-              <Image src={shoppingCartIcon} alt="shopping cart" />
+              <Image src={shoppingCartIcon} alt="shopping cart"  className={styles.navBarShoppingCartIcon}/>
               {state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
             </li>
           </ul>
